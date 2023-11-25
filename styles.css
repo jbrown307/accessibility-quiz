@@ -12,20 +12,54 @@ header {
   display: flex;
 }
 
+#logo {
+  width: max(100px, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
-  font-family: Verdana, Arial;
 }
 
-h1, h2 {
-  font-family: Verdana, Arial;
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
 }
 
 h2 {
-  font-family: Verdana, Arial;
   border-bottom: 4px solid #dfdfe2;
 }
+
+p::before {
+  content: "Question #";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 /*A useful property of an SVG (scalable vector graphics) is that it contains a path attribute which allows the image 
 to be scaled without affecting the resolution of the resultant image*/
@@ -36,17 +70,12 @@ And as the viewport grows, the image will grow accordingly to be 18 percent of t
 /*The aspect-ratio CSS property allows you to define the desired width-to-height ratio of an element's box. 
 This means that even if the parent container or viewport size changes, 
 the browser will adjust the element's dimensions to maintain the specified width-to-height ratio*/
-#logo {
-  width: max(100px, 18vw);
-  background-color: #0a0a23;
-  aspect-ratio: 35 / 4;
-  padding: 0.4rem;
-}
 
-nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-}
+
+
+
+
+
 
 
 
