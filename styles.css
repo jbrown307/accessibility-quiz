@@ -35,6 +35,25 @@ nav > ul {
   justify-content: space-evenly;
 }
 
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+
+nav > ul > li:hover {
+  color:#1b1b32;
+  background-color: #dfdfe2;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration:none;
+}
+
 h1,
 h2 {
   font-family: Verdana, Tahoma;
@@ -61,6 +80,7 @@ p::before {
 }
 
 
+
 /*A useful property of an SVG (scalable vector graphics) is that it contains a path attribute which allows the image 
 to be scaled without affecting the resolution of the resultant image*/
 
@@ -70,6 +90,9 @@ And as the viewport grows, the image will grow accordingly to be 18 percent of t
 /*The aspect-ratio CSS property allows you to define the desired width-to-height ratio of an element's box. 
 This means that even if the parent container or viewport size changes, 
 the browser will adjust the element's dimensions to maintain the specified width-to-height ratio*/
+
+
+
 
 
 
