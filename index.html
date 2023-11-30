@@ -9,9 +9,12 @@ description, keywords, and author-->
 <!--The charset attribute specifies the character encoding of the page
 and, nowadays, UTF-8 is the only encoding supported by most browsers.-->
 
-<!--viewport definition tells the browser how to render the page. Including one betters visual accessibility on mobile, and improves SEO (search engine optimization)-->
+<!--viewport definition tells the browser how to render the page. Including one betters 
+visual accessibility on mobile, and improves SEO (search engine optimization)-->
 
-<!--Another important meta element for accessibility and SEO is the description definition. The value of the content attribute is used by search engines to provide a description of your page.-->
+<!--Another important meta element for accessibility and SEO is the description definition. 
+The value of the content attribute is used by search engines to provide a description 
+of your page.-->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +28,13 @@ and, nowadays, UTF-8 is the only encoding supported by most browsers.-->
   <header>
     <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
     <h1>HTML/CSS Quiz</h1>
-    <!--Navigation is a core part of accessibility, and screen readers rely on you to provide the structure of your page. This is accomplished with semantic HTML elements-->
+    <!--Navigation is a core part of accessibility, and screen readers rely on you to provide 
+    the structure of your page. This is accomplished with semantic HTML elements-->
     <nav>
       <ul>
-        <!--To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values-->
+        <!--To increase the page accessibility, the role attribute can be used to indicate the 
+        purpose behind an element on the page to assistive technologies. The role attribute
+        is a part of the Web Accessibility Initiative (WAI), and accepts preset values-->
 
         <!--the navigation accessibility can be improved by providing keyboard shortcuts
         The accesskey attribute accepts a space-separated list of access key-->
@@ -43,7 +49,8 @@ and, nowadays, UTF-8 is the only encoding supported by most browsers.-->
   <!--The main element will contain the core content of your page-->
   
   <!--Adding a placeholder to an input actually not a best-practice for accessibility; 
-  too often, users confuse the placeholder text with an actual input value  they think there is already a value in the input.-->
+  too often, users confuse the placeholder text with an actual input value  they think there 
+  is already a value in the input.-->
 
   <!--Rely on the label being the best-practice-->
   <main>
@@ -60,7 +67,9 @@ and, nowadays, UTF-8 is the only encoding supported by most browsers.-->
             <input type="email" name="student-email" id="student-email" />
           </div>
           <div class="info">
-          <!--Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read-->
+          <!--Arguably, D.O.B. is not descriptive enough. This is especially true for visually 
+            impaired users. One way to get around such an issue, without having to add 
+            visible text to the label, is to add text only a screen reader can read-->
             <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
             <input type="date" name="birth-date" id="birth-date" />
           </div>
